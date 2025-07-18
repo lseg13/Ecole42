@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu des Roulants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .menu-deroulant {
+            display: flex;
+            background-color: black;
+            color: white;   
+            border-radius: 5px;
+            padding: 1px;
+        }
+        .menu {
+            position: relative;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 1.5s;
+        }
+        .menu:hover {
+            background-color: black;
+        }
+        .sous-menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: white;
+            border-radius: 5px;
+            width: 150px;
+
+        }
+        .menu:hover .sous-menu {
+            display: block;
+        }
+        .aliments {
+            padding: 15px;
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+        .aliments:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-deroulant">
+    <div class="menu">
+        Entrées
+        <div class="sous-menu">
+            <a href="#" class="aliments">Salade</a>
+            <a href="#" class="aliments">Burger</a>
+        </div>
+    </div>
+    <div class="menu">
+        Plats Principaux
+        <div class="sous-menu">
+            <a href="#" class="aliments">Poulet</a>
+            <a href="#" class="aliments">Carbonara</a>
+        </div>
+    </div>
+    <div class="menu">
+        Desserts
+        <div class="sous-menu">
+            <a href="#" class="aliments">Tarte aux pommes</a>
+            <a href="#" class="aliments">Glace</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
